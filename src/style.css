@@ -236,6 +236,7 @@ textarea {
     .cv-aside-container {
         grid-column-start: none;
         background-color: lightblue;
+        width: 93%;
     }
 
     .cv-section-container {
