@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://erio94.github.io/cv-editable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erio94/cv-editable.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
