@@ -6,27 +6,27 @@ body {
 }
 
 .cv-main-container {
-    height: 96vh;
-    display: flex;
-    flex-direction: row;
+    height: auto;
+    display: grid;
+    align-content: center;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-rows: auto;
 }
 
-/* ASIDE O ZONA DE CONFIGURACION */
 .cv-aside-container {
-    position: relative;
-    right: 90px;
-    top: 50px;
+    grid-column-start: 2;
     background-color: lightblue;
+    margin-top: 20px;
 }
 
-/* TARJETAS EDUCACION EXPERIENCIA + */
 .ed-container-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    min-height: 70px;
     background-color: #EDF2F7;
 }
 
@@ -39,6 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 90px;
+    font-size: 22px;
 }
 
 .icon-class svg {
@@ -52,25 +53,12 @@ body {
 
 /* Contenedor Principal */
 .cv-section-container {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2em;
-}
-
-.cv-container {
-    width: 800px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    z-index: 30;
+    padding: 1em;
+    grid-column-start: 3;
 }
 
 /* Encabezado */
 .cv-header {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 1em;
 }
@@ -85,6 +73,19 @@ body {
     font-size: 1em;
 }
 
+.cv-address,
+.cv-email,
+.cv-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-contact svg {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 /* Cuerpo del CV */
 .cv-body {
     padding: 2em;
@@ -93,7 +94,6 @@ body {
 .cv-section-title {
     font-size: 1.5em;
     border-bottom: 2px solid #333;
-    margin-bottom: 1em;
 }
 
 /* Experiencia Laboral y Educación */
@@ -139,6 +139,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 30;
 }
 
 .cv-container.left .cv-header,
@@ -166,12 +170,9 @@ body {
 .settings-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
-    border: 1px solid #1b4d7c;
-    border-radius: 8px;
-    width: fit-content;
-    color: #1b4d7c;
+    color: black;
 }
 
 .font-selector,
@@ -182,7 +183,6 @@ body {
     border-radius: 4px;
     border: 1px solid #1b4d7c;
     transition: 0.3s;
-    color: #1b4d7c;
     background: white;
 }
 
@@ -196,26 +196,20 @@ body {
 .position-buttons {
     display: flex;
     gap: 0.5rem;
-    color: #1b4d7c;
+    flex-direction: column;
 }
 
 .cv-footer {
-    width: 100%;
     color: #333;
-    padding: 20px 0;
     text-align: center;
     font-size: 16px;
-    position: relative;
-    bottom: 0;
-    right: 0;
 }
 
 .cv-footer svg {
     margin-right: 8px;
-
     fill: #0077b6;
+    display: inline-block;
     vertical-align: middle;
-
     font-size: 30px;
 }
 
@@ -223,14 +217,53 @@ body {
     font-weight: 500;
     display: inline-block;
     margin: 0 auto;
-}
-
-.cv-footer span,
-.cv-footer svg {
-    display: inline-block;
     vertical-align: middle;
 }
 
 textarea {
     background-color: white !important;
+}
+
+@media screen and (max-width: 800px) {
+    .cv-main-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: 20px;
+    }
+
+    .cv-aside-container {
+        grid-column-start: none;
+        background-color: lightblue;
+    }
+
+    .cv-section-container {
+        padding: 1em;
+        grid-column-start: none;
+        margin-top: 30px;
+    }
+
+    .cv-footer {
+        margin: 20px auto;
+    }
+
+    .settings-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: none;
+        width: fit-content;
+        color: black;
+    }
+}
+
+.header {
+    background-color: #1b4d7c;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }

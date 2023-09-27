@@ -7,8 +7,9 @@ function App() {
   // Utiliza el hook personalizado para obtener el estado y las funciones de actualización
 
   return (
-    <>
-      Solo en PC o portatil
+    <>  <header className='header'>
+      <h1>CV Configurador</h1>
+    </header>
       <main className='cv-main-container'>
         <aside className='cv-aside-container'>
           <ConfigCV />

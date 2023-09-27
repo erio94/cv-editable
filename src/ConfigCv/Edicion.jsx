@@ -35,7 +35,7 @@ function Edicion() {
 
     return (
         <div className="settings-container">
-            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c' }}>
+            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c', fontWeight: '600' }}>
                 Texto
             </label>
             <label>
@@ -55,7 +55,7 @@ function Edicion() {
                 <span style={{ marginRight: '5px' }}>Color de Fuente:</span>
                 <input className="color-picker" type="color" onChange={handleColorChange} />
             </label>
-            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c' }}>
+            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c', fontWeight: '600' }}>
                 Cabecera
                 <hr />
             </label>
@@ -73,7 +73,7 @@ function Edicion() {
                 <button onClick={() => handleHeaderPositionChange('left')}>Izquierda</button>
                 <button onClick={() => handleHeaderPositionChange('right')}>Derecha</button>
             </div>
-            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c' }}>
+            <label style={{ borderBottom: '2px solid #1b4d7c', color: '#1b4d7c', fontWeight: '600' }}>
                 Cuerpo
                 <hr />
             </label>

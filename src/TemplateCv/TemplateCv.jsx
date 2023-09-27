@@ -1,6 +1,9 @@
 import '../style.css'
 import { useCvSettings } from '../CvSettings/CvSettings';
 import { useCvContext } from '../CvContext/CvContext';
+import { AdressSvg } from '../ConfigCv/AdressSvg';
+import { PhoneSvg } from '../ConfigCv/PhoneSvg';
+import { EmailSvg } from '../ConfigCv/EmailSvg';
 import {
     Button
 } from '@chakra-ui/react'
@@ -26,9 +29,9 @@ function TemplateCv() {
                 <div className="cv-header" style={{ backgroundColor: headerBgColor, color: fontColorHead }}>
                     <h1 className="cv-name">{personalData.nombre || ''}</h1>
                     <div className="cv-contact">
-                        {personalData.email && <p className="cv-email">Contacto: {personalData.email}</p>}
-                        {personalData.phone && <p className="cv-phone">Teléfono: {personalData.phone}</p>}
-                        {personalData.adress && <p className="cv-address">Dirección: {personalData.adress}</p>}
+                        {personalData.email && <div className="cv-email"><EmailSvg color={fontColorHead} /> {personalData.email}</div>}
+                        {personalData.phone && <div className="cv-phone"><PhoneSvg color={fontColorHead} /> {personalData.phone}</div>}
+                        {personalData.adress && <div className="cv-address"><AdressSvg color={fontColorHead} /> {personalData.adress}</div>}
                     </div>
                 </div>
 
@@ -68,7 +71,7 @@ function TemplateCv() {
                 </div>
             </div>
             <ReactToPrint
-                trigger={() => <Button ml={'35px'} colorScheme='green'>Descargar CV</Button>}
+                trigger={() => <Button mt={'35px'} colorScheme='green'>Descargar CV</Button>}
                 content={() => document.querySelector('.cv-container')} />
         </>
     );
