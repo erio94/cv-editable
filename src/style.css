@@ -240,7 +240,7 @@ textarea {
     }
 
     .cv-section-container {
-        padding: 1em;
+        padding: 0.8em;
         grid-column-start: none;
         margin-top: 30px;
     }
