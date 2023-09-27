@@ -236,11 +236,10 @@ textarea {
     .cv-aside-container {
         grid-column-start: none;
         background-color: lightblue;
-        width: 93%;
     }
 
     .cv-section-container {
-        padding: 0.7em;
+        padding: 1em;
         grid-column-start: none;
         margin-top: 30px;
     }
