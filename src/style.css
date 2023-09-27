@@ -18,7 +18,7 @@ body {
 
 .cv-aside-container {
     grid-column-start: 2;
-    background-color: lightblue;
+    background-color: #fff;
     margin-top: 20px;
 }
 
@@ -235,7 +235,7 @@ textarea {
 
     .cv-aside-container {
         grid-column-start: none;
-        background-color: lightblue;
+        background-color: #fff;
     }
 
     .cv-section-container {
