@@ -1,4 +1,4 @@
-import { useCvContext } from '../CvContext/CvContext.jsx';
+import { useCvContext } from '../CvContext/CvContext';
 import SvgInvisible from './SvgInvisible'
 import { useEffect } from 'react';
 import { useState } from 'react'

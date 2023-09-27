@@ -1,7 +1,7 @@
 import FormExperience from './FormExperience'
 import FormEducation from './FormEducation'
 import FormPersonal from './FormPersonal'
-import Edicion from './Edicion.jsx'
+import Edicion from './Edicion'
 import '../style.css'
 import {
     Tabs,

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
-import { useCvContext } from '../CvContext/CvContext.jsx';
+import { useCvContext } from '../CvContext/CvContext';
 import '../style.css'
 import {
     Input,

@@ -1,6 +1,6 @@
 import '../style.css'
-import { useCvSettings } from '../CvSettings/CvSettings.jsx';
-import { useCvContext } from '../CvContext/CvContext.jsx';
+import { useCvSettings } from '../CvSettings/CvSettings';
+import { useCvContext } from '../CvContext/CvContext';
 import {
     Button
 } from '@chakra-ui/react'

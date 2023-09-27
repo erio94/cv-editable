@@ -1,4 +1,4 @@
-import { useCvSettings } from '../CvSettings/CvSettings.jsx';
+import { useCvSettings } from '../CvSettings/CvSettings';
 
 function Edicion() {
     const { setFontFamily, setFontColor } = useCvSettings();

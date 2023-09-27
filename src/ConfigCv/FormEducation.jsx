@@ -1,7 +1,7 @@
 import SvgVisble from './SvgVisible';
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { useCvContext } from '../CvContext/CvContext.jsx';
+import { useCvContext } from '../CvContext/CvContext';
 import { Fragment } from 'react';
 import '../style.css'
 import {
